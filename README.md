@@ -1,1 +1,1 @@
-This is a challenge from frontend-mentor that give a Figma file to replicate the design given.
+This is a challenge from frontend-mentor that gives a Figma file to try and replicate it as close as possible. It is still a work in progress, but I have a live website with the work I've done on it so far here: https://ecom-audiophile.netlify.app/
