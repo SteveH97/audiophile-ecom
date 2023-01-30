@@ -1,0 +1,5 @@
+export { default as Home } from './home/Home'
+export { default as Headphones } from './headphones/Headphones'
+export { default as Speakers } from './speakers/Speakers'
+export { default as Earphones } from './earphones/Earphones'
+export { default as Products} from './products/Products'

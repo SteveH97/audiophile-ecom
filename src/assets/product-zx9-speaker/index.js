@@ -1,0 +1,17 @@
+export {default as DCatzx9} from './desktop/image-category-page-preview.jpg'
+export {default as DGalOnezx9} from './desktop/image-gallery-1.jpg'
+export {default as DGalTwozx9} from './desktop/image-gallery-2.jpg'
+export {default as DGalThreezx9} from './desktop/image-gallery-3.jpg'
+export {default as DImgProzx9} from './desktop/image-product.jpg'
+
+export {default as TCatzx9} from './tablet/image-category-page-preview.jpg'
+export {default as TGalOnezx9} from './tablet/image-gallery-1.jpg'
+export {default as TGalTwozx9} from './tablet/image-gallery-2.jpg'
+export {default as TGalThreezx9} from './tablet/image-gallery-3.jpg'
+export {default as TImgProzx9} from './tablet/image-product.jpg'
+
+export {default as MCatzx9} from './mobile/image-category-page-preview.jpg'
+export {default as MGalOnezx9} from './mobile/image-gallery-1.jpg'
+export {default as MGalTwozx9} from './mobile/image-gallery-2.jpg'
+export {default as MGalThreezx9} from './mobile/image-gallery-3.jpg'
+export {default as MImgProzx9} from './mobile/image-product.jpg'

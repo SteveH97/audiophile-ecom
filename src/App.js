@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom'
+import { Home, Headphones, Speakers, Earphones, Products } from './containers/index'
+import { Xx59, Xx991, Xx992, Yx1, Zx7, Zx9 } from './containers/products/index'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/headphones' element={<Headphones/>}/>
+      <Route path='/speakers' element={<Speakers/>}/>
+      <Route path='/earphones' element={<Earphones/>}/>
+      <Route path='/products' element={<Products/>}>
+        <Route path='xx59' element={<Xx59/>}/>
+        <Route path='xx99-mark-one' element={<Xx991/>}/>
+        <Route path='xx99-mark-two' element={<Xx992/>}/>
+        <Route path='yx1' element={<Yx1/>}/>
+        <Route path='zx7' element={<Zx7/>}/>
+        <Route path='zx9' element={<Zx9/>}/>
+      </Route>
+    </Routes>
     </div>
   );
 }

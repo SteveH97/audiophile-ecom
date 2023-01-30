@@ -1,0 +1,17 @@
+export {default as DCat991} from './desktop/image-category-page-preview.jpg'
+export {default as DGalOne991} from './desktop/image-gallery-1.jpg'
+export {default as DGalTwo991} from './desktop/image-gallery-2.jpg'
+export {default as DGalThree991} from './desktop/image-gallery-3.jpg'
+export {default as DImgPro991} from './desktop/image-product.jpg'
+
+export {default as TCat991} from './tablet/image-category-page-preview.jpg'
+export {default as TGalOne991} from './tablet/image-gallery-1.jpg'
+export {default as TGalTwo991} from './tablet/image-gallery-2.jpg'
+export {default as TGalThree991} from './tablet/image-gallery-3.jpg'
+export {default as TImgPro991} from './tablet/image-product.jpg'
+
+export {default as MCat991} from './mobile/image-category-page-preview.jpg'
+export {default as MGalOne991} from './mobile/image-gallery-1.jpg'
+export {default as MGalTwo991} from './mobile/image-gallery-2.jpg'
+export {default as MGalThree991} from './mobile/image-gallery-3.jpg'
+export {default as MImgPro991} from './mobile/image-product.jpg'

@@ -1,0 +1,352 @@
+.Cat {
+  display: flex;
+  position: absolute;
+  width: 1110px;
+  height: 284px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .Cat {
+    width: 689px;
+    height: 217px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Cat {
+    width: 327px;
+    height: 683px;
+    flex-direction: column;
+  }
+}
+
+.Cat__hp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 284px;
+  align-items: center;
+}
+.Cat__hp img {
+  position: absolute;
+  width: 210.95px;
+  height: 210px;
+  z-index: 2;
+}
+.Cat__hp h4 {
+  position: absolute;
+  height: 25px;
+  top: 196px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+  z-index: 1;
+}
+.Cat__hp a {
+  position: absolute;
+  width: 57.32;
+  height: 18px;
+  top: 236px;
+  z-index: 2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.Cat__hp a:hover {
+  color: var(--orange);
+  transition: 0.2s;
+}
+@media screen and (max-width: 768px) {
+  .Cat__hp {
+    width: 223px;
+    height: 217px;
+  }
+  .Cat__hp img {
+    width: 140px;
+    height: 145px;
+    left: 41.5px;
+  }
+  .Cat__hp h4 {
+    font-size: 15px;
+    top: 140px;
+    left: 58px;
+  }
+  .Cat__hp a {
+    left: 83px;
+    top: 177px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Cat__hp {
+    width: 327px;
+  }
+  .Cat__hp img {
+    width: 130px;
+    height: 130px;
+    left: 100px;
+  }
+  .Cat__hp h4 {
+    position: absolute;
+    height: 20px;
+    left: 109px;
+    top: 140px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.07143px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .Cat__hp a {
+    left: 135px;
+    top: 177px;
+  }
+}
+
+.Cat__speakers {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 276.5px;
+  align-items: center;
+}
+.Cat__speakers img {
+  position: absolute;
+  width: 210.95px;
+  height: 220px;
+  z-index: 2;
+}
+.Cat__speakers h4 {
+  position: absolute;
+  height: 25px;
+  top: 196px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+  z-index: 1;
+}
+.Cat__speakers a {
+  position: absolute;
+  width: 57.32;
+  height: 18px;
+  top: 236px;
+  z-index: 2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.Cat__speakers a:hover {
+  color: var(--orange);
+  transition: 0.2s;
+}
+@media screen and (max-width: 768px) {
+  .Cat__speakers {
+    width: 223px;
+    height: 217px;
+  }
+  .Cat__speakers img {
+    width: 140px;
+    height: 150px;
+    left: 41.5px;
+  }
+  .Cat__speakers h4 {
+    top: 140px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.07143px;
+    text-transform: uppercase;
+  }
+  .Cat__speakers a {
+    left: 83px;
+    top: 177px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Cat__speakers {
+    width: 327px;
+  }
+  .Cat__speakers img {
+    width: 130px;
+    height: 130px;
+    left: 100px;
+  }
+  .Cat__speakers h4 {
+    position: absolute;
+    height: 20px;
+    left: 122px;
+    top: 140px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.07143px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .Cat__speakers a {
+    left: 135px;
+    top: 177px;
+  }
+}
+
+.Cat__ep {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 263px;
+  align-items: center;
+}
+.Cat__ep img {
+  position: absolute;
+  width: 210.95px;
+  height: 200px;
+  top: 15px;
+  z-index: 2;
+}
+.Cat__ep h4 {
+  position: absolute;
+  height: 25px;
+  top: 196px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  color: #000000;
+  z-index: 1;
+}
+.Cat__ep a {
+  position: absolute;
+  width: 57.32;
+  height: 18px;
+  top: 236px;
+  z-index: 2;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.Cat__ep a:hover {
+  color: var(--orange);
+  transition: 0.2s;
+}
+@media screen and (max-width: 768px) {
+  .Cat__ep {
+    width: 223px;
+    height: 217px;
+  }
+  .Cat__ep img {
+    width: 140px;
+    height: 150px;
+    left: 41.5px;
+    top: 0;
+  }
+  .Cat__ep h4 {
+    font-size: 15px;
+    top: 140px;
+    left: 58px;
+  }
+  .Cat__ep a {
+    left: 83px;
+    top: 177px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Cat__ep {
+    width: 327px;
+  }
+  .Cat__ep img {
+    width: 130px;
+    height: 130px;
+    left: 100px;
+  }
+  .Cat__ep h4 {
+    position: absolute;
+    height: 20px;
+    left: 115px;
+    top: 140px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1.07143px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .Cat__ep a {
+    left: 135px;
+    top: 177px;
+  }
+}
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 204px;
+  background-color: var(--light-grey);
+  top: 80px;
+}
+@media screen and (max-width: 768px) {
+  .mask {
+    width: 223px;
+    height: 165px;
+    top: 52px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mask {
+    width: 327px;
+  }
+}/*# sourceMappingURL=Categories.css.map */

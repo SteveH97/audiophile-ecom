@@ -1,0 +1,121 @@
+nav{
+  position: absolute;
+  width: 1110px;
+  height: 28px;  
+  display: flex;
+  z-index: 3;
+  color: white;
+  top: 32px;
+
+  svg{
+    fill: white;
+  }
+
+  ul{
+    display: flex;
+    width: 429px;
+    height: 25px;
+    padding-left: 197px;
+    padding-right: 317.5px;
+    justify-content: space-between;
+
+
+    li{
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            font-size: 13px;
+            color: var(--white);
+
+        }
+        :hover{
+            color: var(--orange);
+        }
+    }
+  }
+
+  @media screen and (max-width:768px){
+    left: 39px;
+    width: 689px;
+  }
+
+  @media screen and (max-width:375px){
+    width: 327px;
+    left: 24px;
+  }
+
+}
+
+.nav__desk{
+  display: flex;
+
+  @media screen and (max-width:768px){
+    display: none;
+  }
+
+  @media screen and (max-width:375px){
+    display: none;
+  }
+}
+
+/////////////////////            TABLET            ///////////////////////
+
+.nav__Tab{
+  display: none;
+
+  @media screen and (min-width:376px) and (max-width:768px){
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+}
+
+.nav__tab-menu{
+  position: relative;
+}
+
+.nav__tab-logo{
+  position: absolute;
+  left: 97px;
+}
+
+.nav__tab-cart{
+  position: relative;
+  left: 650px;
+}
+
+/////////////////////            MOBILE          ///////////////////////
+.nav__mob{
+  display: none;
+
+  @media screen and (max-width:375px){
+    width: 327px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.nav__tab-openMenu{
+  position: absolute;
+  top: 65px;
+  left: -40px;
+  height: 340px;
+  width: 768px;
+  z-index: 5;
+  background-color: white;
+}
+
+.nav__extra{
+  position: relative;
+  top: 56px;
+  left: 40px;
+}
+
+.nav__cart{
+  position: absolute;
+  left: 898px;
+  top: 129px;
+}

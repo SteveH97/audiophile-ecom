@@ -1,0 +1,5 @@
+export {default as earyx1} from './image-earphones-yx1.jpg'
+export {default as hero} from './image-hero.jpg'
+export {default as speakerzx7} from './image-speaker-zx7.jpg'
+export {default as speakerzx9} from './image-speaker-zx9.png'
+export {ReactComponent as Circles} from './pattern-circles.svg'

@@ -1,0 +1,6 @@
+export { default as Mbestgear} from './image-best-gear.jpg' 
+export { default as Mxx59} from './image-xx59-headphones.jpg' 
+export { default as Mxx991} from './image-xx99-mark-one-headphones.jpg' 
+export { default as Mxx992} from './image-xx99-mark-two-headphones.jpg' 
+export { default as Mzx7} from './image-zx7-speaker.jpg' 
+export { default as Mzx9} from './image-zx9-speaker.jpg' 

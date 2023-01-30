@@ -1,0 +1,125 @@
+.Bg {
+  display: flex;
+  position: relative;
+  width: 1110px;
+  height: 588px;
+}
+.Bg img {
+  position: absolute;
+  width: 540px;
+  height: 588px;
+  border-radius: 8px;
+  left: 570px;
+}
+@media screen and (max-width: 768px) {
+  .Bg {
+    width: 689px;
+    height: 633px;
+  }
+  .Bg img {
+    width: 689px;
+    height: 300px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Bg {
+    width: 327px;
+    height: 698px;
+  }
+  .Bg img {
+    width: 327px;
+    height: 300px;
+  }
+}
+
+.Bg__info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 445px;
+}
+.Bg__info h1 {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 445px;
+  margin: 146px 0 30px 0;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.42857px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.Bg__info h1 span {
+  color: var(--orange);
+}
+.Bg__info p {
+  position: absolute;
+  top: 266.5px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+  .Bg__info {
+    width: 573px;
+    height: 270px;
+    top: 363px;
+    left: 58px;
+  }
+  .Bg__info h1 {
+    width: 573px;
+    height: 88px;
+    margin: 0px 0px 0px 0px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    /* or 110% */
+    text-align: center;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .Bg__info p {
+    top: 120px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 375px) {
+  .Bg__info {
+    width: 327px;
+    left: 0px;
+    top: 340px;
+  }
+  .Bg__info h1 {
+    width: 327px;
+    height: 76px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .Bg__info p {
+    top: 108px;
+  }
+}/*# sourceMappingURL=BestGear.css.map */
