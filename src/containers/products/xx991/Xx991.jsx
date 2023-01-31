@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { submitCart } from '../../../reduxStore/cart-slice'
 import  productData  from '../../../data.json' 
 import { DGalOne991, DGalTwo991, DGalThree991, DImgPro991, TGalOne991, TGalTwo991, TGalThree991, TImgPro991, MGalOne991, MGalTwo991, MGalThree991, MImgPro991 } from '../../../assets/product-xx99-mark-one-headphones/index'
 import { DImgPro992, TImgPro992, MImgPro992 } from '../../../assets/product-xx99-mark-two-headphones/index'
@@ -9,6 +11,8 @@ import '../Item.css'
 
 const Xx991 = () => {
 
+  const cart = useDispatch();
+  const cartCheck = useSelector(state => state.cart.cart);
 
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
@@ -19,6 +23,29 @@ const Xx991 = () => {
     if(quantity !== 0){
       setQuantity(quantity - 1);
     }
+  }
+
+  const handleCart = () =>{
+
+    //Check if item is already in the cart
+    let inCart = false;
+
+    for(let i = 0; i < cartCheck.length; i++){
+      if(cartCheck[i].id === 2){
+        inCart = true;
+      }
+    }
+
+
+    //Add to the cart if not found else add to the quantity
+    if(!inCart){
+      let id = 2;
+      let name = data.name;
+      let price = data.price;
+      cart(submitCart({id, name, price, quantity}))
+    }
+
+    setQuantity(0);
   }
 
   //Since this is a small application with a small dataset, I'm just reading the json
@@ -67,7 +94,7 @@ const Xx991 = () => {
                   <h2>{quantity}</h2>
                   <button onClick={()=>setQuantity(quantity +1)}>+</button>
                 </div>
-                <button className='Item__addToCart'>Add to cart</button>
+                <button className='Item__addToCart' onClick={handleCart}>Add to cart</button>
               {/* </div> */}
               
             </div>

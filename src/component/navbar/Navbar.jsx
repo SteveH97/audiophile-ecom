@@ -8,7 +8,6 @@ import { Categories, ECart } from '../'
 
 const Navbar = () => {
 
-  const [hey, setHey] = useState(true);
   const [menu, setMenu] = useState(false);
   const [ecomCart, setEcomCart] = useState(false);
 
@@ -22,7 +21,7 @@ const Navbar = () => {
               <li><Link to='/speakers'>SPEAKERS</Link></li>
               <li><Link to='/earphones'>EARPHONES</Link></li>
           </ul>
-          <Cart />
+          <Cart onClick={()=>setEcomCart(!ecomCart)}/>
         </div>
 
         <div className='nav__Tab'>
@@ -51,15 +50,15 @@ const Navbar = () => {
         </>
       }  
 
-      {/* {
-         ?
+      {
+        ecomCart ?
         (<div className='nav__cart'>
             <ECart/>
         </div>)
         :
         <>
         </>
-      } */}
+      }
     </nav>
   )
 }

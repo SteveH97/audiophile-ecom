@@ -1,0 +1,6 @@
+export { default as Imgxx59 } from './product-xx59-headphones/desktop/image-product.jpg'
+export { default as Imgxx991 } from './product-xx99-mark-one-headphones/desktop/image-product.jpg'
+export { default as Imgxx992} from './product-xx99-mark-two-headphones/desktop/image-product.jpg'
+export { default as Imgyx1 } from './product-yx1-earphones/desktop/image-product.jpg'
+export { default as Imgzx7 } from './product-zx7-speaker/desktop/image-product.jpg'
+export { default as Imgzx9 } from './product-zx9-speaker/desktop/image-product.jpg'

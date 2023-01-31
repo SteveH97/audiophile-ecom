@@ -1,1 +1,41 @@
-/*# sourceMappingURL=Checkout.css.map */
+.Checkout__ {
+  display: flex;
+  position: absolute;
+  width: 1440px;
+  height: 1871px;
+}
+.Checkout__ header {
+  position: absolute;
+  width: 1440px;
+  height: 97px;
+  background-color: var(--black);
+}
+.Checkout__ footer {
+  position: absolute;
+  width: 1440px;
+  height: 365px;
+  top: 1506px;
+}
+
+.Checkout__nav {
+  margin-left: 165px;
+}
+
+.Checkout__main {
+  display: flex;
+  position: absolute;
+  left: 165px;
+  top: 239px;
+}
+
+.Checkout__main-form {
+  display: flex;
+  width: 730px;
+  height: 1126px;
+}
+
+.Checkout__main-summary {
+  display: flex;
+  width: 350px;
+  height: 612px;
+}/*# sourceMappingURL=Checkout.css.map */

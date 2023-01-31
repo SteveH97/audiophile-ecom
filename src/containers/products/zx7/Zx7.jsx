@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { submitCart } from '../../../reduxStore/cart-slice'
 import  productData  from '../../../data.json' 
 import { DGalOnezx7, DGalTwozx7, DGalThreezx7, DImgProzx7, TGalOnezx7, TGalTwozx7, TGalThreezx7, TImgProzx7, MGalOnezx7, MGalTwozx7, MGalThreezx7, MImgProzx7 } from '../../../assets/product-zx7-speaker/index'
 import { DImgPro991, TImgPro991, MImgPro991 } from '../../../assets/product-xx99-mark-one-headphones/index'
@@ -8,6 +10,9 @@ import { DImgProzx9, TImgProzx9, MImgProzx9 } from '../../../assets/product-zx9-
 import '../Item.css'
 
 const Zx7 = () => {
+  
+  const cart = useDispatch();
+  const cartCheck = useSelector(state => state.cart.cart);
 
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
@@ -19,6 +24,28 @@ const Zx7 = () => {
     }
   }
 
+  const handleCart = () =>{
+
+    //Check if item is already in the cart
+    let inCart = false;
+
+    for(let i = 0; i < cartCheck.length; i++){
+      if(cartCheck[i].id === 4){
+        inCart = true;
+      }
+    }
+
+
+    //Add to the cart if not found else add to the quantity
+    if(!inCart){
+      let id = 4;
+      let name = data.name;
+      let price = data.price;
+      cart(submitCart({id, name, price, quantity}))
+    }
+
+    setQuantity(0);
+  }
   //Since this is a small application with a small dataset, I'm just reading the json
   //locally. However, for future plans with a database, I'll just read 
   //in whatever product details i need instead of the whole dataset like below
@@ -67,7 +94,7 @@ const Zx7 = () => {
                   <h2>{quantity}</h2>
                   <button onClick={()=>setQuantity(quantity +1)}>+</button>
                 </div>
-                <button className='Item__addToCart'>Add to cart</button>
+                <button className='Item__addToCart' onClick={handleCart}>Add to cart</button>
               {/* </div> */}
               
             </div>

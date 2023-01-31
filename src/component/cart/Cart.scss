@@ -1,6 +1,212 @@
-.Ecart{
+.ECart__{
+    display: flex;
+    flex-direction: column;
     width: 377px;
-    min-height: 488px;
-    background-color: var(--white);
-    z-index: 4;
+    min-height: 216px;
+    z-index: 5;
+    color: black;
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 313px;
+        height: 48px;
+        margin: 24px 0px 31px 33px;
+        background-color: var(--orange);
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        /* identical to box height */
+
+        text-decoration: none;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--white);
+    }
+
+    a:active{
+        background-color: var(--light-orange);
+    }
 }
+
+.ECart__group1{
+    display: flex;
+    width: 313px;
+    height: 25px;
+    flex-direction: row;
+    margin-left: 33px;
+    margin-top: 31px;
+    justify-content: space-between;
+
+    h3{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+        letter-spacing: 1.28571px;
+        text-transform: uppercase;
+
+        color: var(--black);
+    }
+
+    button{
+        display: flex;
+        border: none;
+
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        /* identical to box height, or 167% */
+
+        text-decoration-line: underline;
+
+        color: #000000;
+        background-color: var(--white);
+
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+}
+
+.ECart__group2{
+    display: flex;
+    width: 313px;
+    margin-top: 32px;
+    margin-left: 33px;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        height: fit-content;
+
+        li{
+            width: 313px;
+            height: 64px;
+            margin-bottom: 24px;
+            display: flex;
+
+            img{
+                width: 64px;
+                height: 64px;
+            }
+
+        }
+    }
+}
+
+.ECart__group2-NP{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 76px;
+    margin-left: 16px;
+    margin-top: 7px;
+}
+
+.ECart__group2-quantity{
+    display: flex;
+    width: 96px;
+    height: 32px;
+    margin-left: 61px;
+    margin-top: 16px;
+
+    button{
+        border: none;
+        width: 32px;
+        height: 32px;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: var(--black);
+        background-color: var(--light-grey);
+
+        // mix-blend-mode: normal;
+        // opacity: 0.25;
+    }
+
+    h2{
+        display: flex;
+        width: 32px;
+        height: 32px;
+        align-items: center;
+        justify-content: center;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 18px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: var(--black);
+        background-color: var(--light-grey);
+    }
+}
+
+.ECart__group3{
+    display: flex;
+    width: 308px;
+    height: 25px;
+    margin-left: 33px;
+    margin-top: 32px;
+    justify-content: space-between;
+
+    h4{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        /* identical to box height, or 167% */
+
+
+        color: var(--black);
+
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    h5{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: var(--black);
+    }
+}
+

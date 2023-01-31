@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
-import { Home, Headphones, Speakers, Earphones, Products } from './containers/index'
+import { Home, Headphones, Speakers, Earphones, Products, Checkout } from './containers/index'
 import { Xx59, Xx991, Xx992, Yx1, Zx7, Zx9 } from './containers/products/index'
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
         <Route path='zx7' element={<Zx7/>}/>
         <Route path='zx9' element={<Zx9/>}/>
       </Route>
+      <Route path='/checkout' element={<Checkout/>}/>
     </Routes>
     </div>
   );

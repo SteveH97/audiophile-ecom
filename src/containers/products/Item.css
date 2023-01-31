@@ -170,6 +170,14 @@
   color: var(--white);
 }
 
+.Item__addToCart:active {
+  background-color: var(--light-orange);
+}
+
+.Item__addToCart:hover {
+  cursor: pointer;
+}
+
 .Item__group1-quantity {
   position: absolute;
   display: flex;
@@ -194,6 +202,9 @@
   width: 40px;
   height: 48px;
   background-color: var(--light-grey);
+}
+.Item__group1-quantity button:hover {
+  cursor: pointer;
 }
 
 .Item__group2 {

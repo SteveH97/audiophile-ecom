@@ -10,6 +10,9 @@ nav {
 nav svg {
   fill: white;
 }
+nav svg:hover {
+  cursor: pointer;
+}
 nav ul {
   display: flex;
   width: 429px;
@@ -112,6 +115,7 @@ nav ul li :hover {
 
 .nav__cart {
   position: absolute;
-  left: 898px;
-  top: 129px;
+  left: 732px;
+  top: 97px;
+  background-color: var(--white);
 }/*# sourceMappingURL=Navbar.css.map */
