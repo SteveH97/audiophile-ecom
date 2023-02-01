@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { clearCart } from '../../reduxStore/cart-slice'
+import { clearCart, changeQuantity } from '../../reduxStore/cart-slice'
 import { Imgxx59, Imgxx991, Imgxx992, Imgyx1, Imgzx7, Imgzx9 } from '../../assets/index'
 import './Cart.css'
 import { useEffect } from 'react'
@@ -26,10 +26,22 @@ const ECart = () => {
   
   const handleAdd = (e) =>{
     console.log(e.target.value);
+  
+    const id = Number(e.target.value);
+    const amount = items[id].quantity + 1;
+    cart(changeQuantity({id, amount}));
   } 
 
   const handleSub = (e) =>{
     console.log(e.target.value);
+    let id = Number(e.target.value);
+
+    if(items[id].quantity != 0){
+    const id = Number(e.target.value);
+    const amount = items[id].quantity - 1;
+    cart(changeQuantity({id, amount}));
+    }
+
   }
 
   //Everytime cart gets a new item then it will cause a re-render 

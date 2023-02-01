@@ -22,16 +22,17 @@ const cartSlice = createSlice({
             cart: []
         }),
 
-        // addQuantity: (state, action)=>({
-        //     ...state,
-        //     cart: [
-        //         state.cart.map(
-        //             (item, i) => i === action.payload ? {...item, item.quantity: quantity + 1} : item
-        //         )
-        //     ]
-        // })
+        changeQuantity: (state, action) => void({
+            ...state,
+            cart: state.cart.map(item => {
+                if(item.id === action.payload.id){
+                    item.quantity = action.payload.amount;
+                    
+                }
+            })
+        })
     }
 })
 
-export const { submitCart, deleteCartItem, clearCart } = cartSlice.actions;
+export const { submitCart, deleteCartItem, clearCart, changeQuantity } = cartSlice.actions;
 export default cartSlice;
