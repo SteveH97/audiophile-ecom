@@ -30,8 +30,98 @@
 
 .Checkout__main-form {
   display: flex;
+  flex-direction: column;
   width: 730px;
   height: 1126px;
+}
+
+.Checkout__inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 634px;
+}
+.Checkout__inputContainer h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 25px;
+  /* identical to box height, or 192% */
+  letter-spacing: 0.928571px;
+  text-transform: uppercase;
+  color: var(--orange);
+  margin-bottom: 16px;
+}
+
+.Checkout__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Checkout__inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.Checkout__inputs label {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.214286px;
+  margin-bottom: 9px;
+  color: var(--black);
+}
+.Checkout__inputs input {
+  background: #FFFFFF;
+  border: 1px solid #CFCFCF;
+  border-radius: 8px;
+  width: 285px;
+  height: 56px;
+  padding-left: 24px;
+}
+.Checkout__inputs input:focus {
+  outline-color: var(--orange);
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.25px;
+  color: var(--black);
+}
+
+.Checkout__payMethod {
+  display: flex;
+  justify-content: space-between;
+  width: 634px;
+}
+
+.Checkout__payMethod-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.Checkout__payOption {
+  display: flex;
+  align-items: center;
+  border: 1px solid #CFCFCF;
+  width: 309px;
+  height: 56px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.Checkout__payOption input {
+  margin: 0 16px 0 16px;
+}
+.Checkout__payOption input:checked {
+  color: var(--orange);
+}
+
+.Checkout__payOption:hover {
+  border: 1px solid var(--orange);
 }
 
 .Checkout__main-summary {

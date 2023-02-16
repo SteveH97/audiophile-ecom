@@ -59,8 +59,7 @@
   font-size: 15px;
   line-height: 25px;
   /* identical to box height, or 167% */
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #000000;
   background-color: var(--white);
   mix-blend-mode: normal;
@@ -80,7 +79,6 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
